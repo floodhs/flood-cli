@@ -1,0 +1,86 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           flood-cli
+version:        4.7.0.0
+license:        GPL-3
+license-file:   LICENSE
+build-type:     Simple
+
+executable flood-cli
+  main-is: Main.hs
+  other-modules:
+      Flood.CLI.Auth
+      Flood.CLI.Command
+      Flood.CLI.Config
+      Flood.CLI.Interaction
+      Flood.CLI.Options
+      Flood.CLI.Torrents
+      Flood.CLI.Torrents.AddFiles
+      Flood.CLI.Torrents.AddUrls
+      Flood.CLI.Torrents.List
+      Flood.CLI.Torrents.Search
+      Paths_flood_cli
+  hs-source-dirs:
+      src
+  default-extensions:
+      GHC2021
+      AllowAmbiguousTypes
+      ApplicativeDo
+      BlockArguments
+      DataKinds
+      DefaultSignatures
+      DeriveAnyClass
+      DerivingStrategies
+      DerivingVia
+      DuplicateRecordFields
+      FunctionalDependencies
+      GADTs
+      LambdaCase
+      MagicHash
+      MultiWayIf
+      NoFieldSelectors
+      NoStarIsType
+      OverloadedLabels
+      OverloadedRecordDot
+      OverloadedStrings
+      PartialTypeSignatures
+      PatternSynonyms
+      QuantifiedConstraints
+      QuasiQuotes
+      RecordWildCards
+      RoleAnnotations
+      StrictData
+      TemplateHaskell
+      TypeFamilies
+      TypeFamilyDependencies
+      UndecidableInstances
+      ViewPatterns
+  ghc-options: -fdefer-typed-holes -Wall -fno-warn-type-defaults -fno-warn-missing-home-modules -fno-warn-name-shadowing -fno-warn-orphans -Wcompat -Wincomplete-patterns -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -funbox-strict-fields -O2
+  build-depends:
+      base
+    , base64
+    , bytestring
+    , cassava
+    , containers
+    , exceptions
+    , flood-api
+    , modern-uri
+    , mtl
+    , optics
+    , optparse-applicative
+    , parser-combinators
+    , pretty-simple
+    , split
+    , syb
+    , text
+    , text-show
+    , time
+    , transformers
+    , unliftio
+    , unliftio-core
+    , unordered-containers
+  default-language: Haskell2010
